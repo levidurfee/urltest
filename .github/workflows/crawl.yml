@@ -1,0 +1,21 @@
+name: Check URLs
+
+on:
+  push:
+    branches:
+      - '*'
+
+env:
+  SLACK_WEBHOOK: ""
+
+jobs:
+  check-urls:
+    runs-on: ubuntu-latest
+    name: Checks URLs from JSON file
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Check URLs
+        uses: bythepixel/urlchecker@v0.1.0
+        args:
+          - ./urls.json
