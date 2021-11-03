@@ -6,7 +6,7 @@ on:
       - '*'
 
 env:
-  SLACK_WEBHOOK: ""
+  SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
 
 jobs:
   check-urls:
