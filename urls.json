@@ -11,5 +11,9 @@
         "url": "https://levi.lol/posts/golang-http-services/",
         "status": 200,
         "regex": "Dec"
+    },
+    {
+        "url": "https://levi.lol/amp/posts/replicating-cloudflare-argo/",
+        "status": 200
     }
 ]
